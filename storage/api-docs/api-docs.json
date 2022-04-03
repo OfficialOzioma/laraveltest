@@ -16,11 +16,11 @@
         }
     },
     "paths": {
-        "/articles": {
+        "/api/v1/articles": {
             "get": {
                 "summary": "Find all the articles",
                 "description": "Returns all the articles",
-                "operationId": "89181b74a8aa4d580750ede6aa32f92a",
+                "operationId": "2bb6d18420d6929d1d4175ace6521d21",
                 "responses": {
                     "200": {
                         "description": "successful operation"
@@ -36,14 +36,14 @@
                 ]
             }
         },
-        "/articles/{id}": {
+        "//api/v1/articles/{id}": {
             "get": {
                 "tags": [
                     "articles"
                 ],
                 "summary": "Find articles by ID",
                 "description": "Returns a single articles",
-                "operationId": "126f0079c2def3834cf2c4a2456d16f9",
+                "operationId": "56175c3e02d9af5eb71fcefb5aaa5422",
                 "parameters": [
                     {
                         "name": "id",
@@ -74,14 +74,14 @@
                 ]
             }
         },
-        "/articles/{id}/comment": {
+        "/api/v1/articles/{id}/comment": {
             "get": {
                 "tags": [
                     "articles"
                 ],
                 "summary": "Find articles by ID with their comments",
                 "description": "Returns a single articles with comments",
-                "operationId": "0e33f9bca20c94c8ef2b7c9513ad26ca",
+                "operationId": "d9b56681f4ff3bb2091b341ee5bb5064",
                 "parameters": [
                     {
                         "name": "id",
@@ -112,14 +112,14 @@
                 ]
             }
         },
-        "/articles/{id}/like": {
+        "/api/v1/articles/{id}/like": {
             "get": {
                 "tags": [
                     "articles"
                 ],
                 "summary": "Find articles by ID with their likes",
                 "description": "Returns a single articles with likes",
-                "operationId": "d4d6e27d1faa7e97563c3ae534d43602",
+                "operationId": "b4cc5ab004724cf975914538ddd9aa65",
                 "parameters": [
                     {
                         "name": "id",
@@ -150,14 +150,14 @@
                 ]
             }
         },
-        "/articles/{id}/view": {
+        "/api/v1/articles/{id}/view": {
             "get": {
                 "tags": [
                     "articles"
                 ],
                 "summary": "Find articles by ID with their views",
                 "description": "Returns a single articles with views",
-                "operationId": "d29af49a7477d2c6eac0a9c26858cdeb",
+                "operationId": "360c14692e503046fdb696d7f19e008d",
                 "parameters": [
                     {
                         "name": "id",

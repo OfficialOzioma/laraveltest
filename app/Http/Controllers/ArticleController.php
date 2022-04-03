@@ -39,7 +39,7 @@ class ArticleController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/articles",
+     *     path="/api/v1/articles",
      *     summary="Find all the articles",
      *     description="Returns all the articles",
      *
@@ -71,7 +71,7 @@ class ArticleController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/articles/{id}",
+     *     path="//api/v1/articles/{id}",
      *     tags={"articles"},
      *     summary="Find articles by ID",
      *     description="Returns a single articles",
@@ -115,7 +115,7 @@ class ArticleController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/articles/{id}/comment",
+     *     path="/api/v1/articles/{id}/comment",
      *     tags={"articles"},
      *     summary="Find articles by ID with their comments",
      *     description="Returns a single articles with comments",
@@ -161,7 +161,7 @@ class ArticleController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/articles/{id}/like",
+     *     path="/api/v1/articles/{id}/like",
      *     tags={"articles"},
      *     summary="Find articles by ID with their likes",
      *     description="Returns a single articles with likes",
@@ -206,7 +206,7 @@ class ArticleController extends Controller
     }
     /**
      * @OA\Get(
-     *     path="/articles/{id}/view",
+     *     path="/api/v1/articles/{id}/view",
      *     tags={"articles"},
      *     summary="Find articles by ID with their views",
      *     description="Returns a single articles with views",
