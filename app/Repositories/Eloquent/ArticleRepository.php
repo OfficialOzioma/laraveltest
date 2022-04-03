@@ -39,7 +39,7 @@ class ArticleRepository extends BaseRepository implements ArticleRepositoryInter
 
     public function getAllWithRelation(array $relation)
     {
-        return $this->model->with($relation)->paginate(10);
+        return $this->model->with($relation)->orderBy('id', 'DESC')->paginate(10);
     }
 
     /**
