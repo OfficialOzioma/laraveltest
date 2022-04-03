@@ -1,0 +1,192 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 OpenApi",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "dikep15@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0",
+        "x-logo": {
+            "url": "https://via.placeholder.com/190x90.png?text=L5-Swagger"
+        }
+    },
+    "paths": {
+        "/articles": {
+            "get": {
+                "summary": "Find all the articles",
+                "description": "Returns all the articles",
+                "operationId": "89181b74a8aa4d580750ede6aa32f92a",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/articles/{id}": {
+            "get": {
+                "tags": [
+                    "articles"
+                ],
+                "summary": "Find articles by ID",
+                "description": "Returns a single articles",
+                "operationId": "126f0079c2def3834cf2c4a2456d16f9",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of articles to return",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplier"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/articles/{id}/comment": {
+            "get": {
+                "tags": [
+                    "articles"
+                ],
+                "summary": "Find articles by ID with their comments",
+                "description": "Returns a single articles with comments",
+                "operationId": "0e33f9bca20c94c8ef2b7c9513ad26ca",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of articles to return",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplier"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/articles/{id}/like": {
+            "get": {
+                "tags": [
+                    "articles"
+                ],
+                "summary": "Find articles by ID with their likes",
+                "description": "Returns a single articles with likes",
+                "operationId": "d4d6e27d1faa7e97563c3ae534d43602",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of articles to return",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplier"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/articles/{id}/view": {
+            "get": {
+                "tags": [
+                    "articles"
+                ],
+                "summary": "Find articles by ID with their views",
+                "description": "Returns a single articles with views",
+                "operationId": "d29af49a7477d2c6eac0a9c26858cdeb",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of articles to return",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplier"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        }
+    }
+}
